@@ -1,0 +1,64 @@
+
+<html>
+    <head>
+    <title>register</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/register.js"></script>
+    </head>
+    
+    <h2 ALIGN="CENTER">Register</h2>
+    
+    <form name="myform" onsubmit="return registration()" method="post" action="./php/register.php">
+    
+                <label for="name">Name: </label>
+                <input id="name" maxlength="50" name="name" type="text" required/><span id="name"></span>
+           <br><br>
+                <label for="course">Course: </label>
+                <select name="course" id="course">
+                    <option value="none">NONE</option>
+                    <option value="be">BE</option>
+                    <option value="mbbs">MBBS</option>
+                    <option value="btech">BTECH</option>
+                    <option value="bsc">BSc</option>required
+                  </select><br><br>
+            
+                <label for="branch">Branch: </label>
+                <input id="branch"  name="branch" type="text" required/>
+                <br><br>
+    
+            
+                <label for="rolln0">Rollno: </label>
+                <input id="rollno"  name="rollno" type="text" required />
+                <br><br>
+            
+                <label for="gender">Gender: </label>
+                <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female" required/> Female
+                    
+                    <br><br>
+                <label for="dob">DOB:</label>
+                <input id="dob"  name="dob" type="date" required/>
+                <br><br>
+    
+            
+               <label for="age">Age:</label>
+              <input id="age"  name="age" type="text" required/>
+              <br><br>
+               <label for="contact">Contact:</label>
+                <input id="contact"  name="contact" type="text" required />
+                <br><br>
+                <label for="email">Email_Address:</label>
+                <input id="email" name="email" type="text" required />
+                <br><br>
+               <label for="epassword">Enter Password:</label>
+               <input id="epassword" name="epassword"
+                    type="password" required />
+                    <br><br>
+                <label for="cpassword">Confirm Password:</label>
+                <input id="cpassword" name="cpassword"
+                    type="password" required/><br><br>
+            <input name="Submit" type="Submit"   value="Create Account"  />
+    
+        
+    </form>
+    </html>

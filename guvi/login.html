@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/style.css">
+<script src="./js/login.js"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+  
+  <form id="login-form" action="./php/login.php" method="post">
+    <h2>Login</h2>
+    <p >
+    <input type="email" id="email" name="email" placeholder="Email Address" required><i class="validation"><span></span><span></span></i>
+    </p>
+    <p><input type="password" id="password" name="password" placeholder="password" required><i class="validation"><span></span><span></span></i></p>
+    <p>
+    <input type="submit" id="login" value="Login">
+    </p>
+ 
+ 
+    <p>Not a member? <a href="register.html">Create Account</a><p>
+  
+</form>
+</body>
+</html>
